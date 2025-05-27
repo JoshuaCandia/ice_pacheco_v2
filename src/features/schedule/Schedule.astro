@@ -3,27 +3,28 @@ import SectionTitle from "../../shared/components/SectionTitle.astro";
 
 const activities = [
   {
-    day: "Domingo",
+    day: "Lunes",
     items: [
       {
-        time: "10:00",
-        name: "Escuela Dominical",
-        description: "Para todas las edades",
-      },
-      {
-        time: "11:30",
-        name: "Culto Principal",
-        description: "Alabanza y predicación",
+        time: "20:00",
+        name: "E.L.C.O.P.",
+        description:
+          "Encuentro para personas y/o familiares con situaciones de consumo problemático.",
       },
     ],
   },
   {
-    day: "Martes",
+    day: "Miércoles",
     items: [
       {
-        time: "19:30",
-        name: "Reunión de Oración",
-        description: "Tiempo de intercesión",
+        time: "20:00",
+        name: "Encuentro de estudio y oración",
+        description: "",
+      },
+      {
+        time: "15:30",
+        name: "Encuentro femenino",
+        description: "1° y 3° miércoles de cada mes",
       },
     ],
   },
@@ -31,9 +32,9 @@ const activities = [
     day: "Jueves",
     items: [
       {
-        time: "19:00",
-        name: "Estudio Bíblico",
-        description: "Profundizando en la Palabra",
+        time: "17:30",
+        name: "Club de la tarea",
+        description: "",
       },
     ],
   },
@@ -42,8 +43,8 @@ const activities = [
     items: [
       {
         time: "20:00",
-        name: "Reunión de Jóvenes",
-        description: "Adoración, comunión y enseñanza",
+        name: "Adolescentes (GAPC)",
+        description: "",
       },
     ],
   },
@@ -51,14 +52,24 @@ const activities = [
     day: "Sábado",
     items: [
       {
-        time: "16:00",
-        name: "Club de Niños",
-        description: "Actividades y enseñanza para niños",
+        time: "20:00",
+        name: "Jóvenes",
+        description: "Encuentro quincenal. Seguinos en Instagram: @jvns_icep",
+      },
+    ],
+  },
+  {
+    day: "Domingo",
+    items: [
+      {
+        time: "11:00",
+        name: "Escuela Bíblica",
+        description: "",
       },
       {
-        time: "18:00",
-        name: "Ensayo del Coro",
-        description: "Preparación para el domingo",
+        time: "19:00",
+        name: "Cena del Señor y Estudio Bíblico",
+        description: "",
       },
     ],
   },
@@ -103,6 +114,29 @@ const activities = [
           </div>
         ))
       }
+    </div>
+    <div class="mt-12 bg-beige-warm rounded-2xl p-6 text-gray-800">
+      <h4 class="text-faith-blue text-xl font-bold mb-4">Notas importantes</h4>
+      <ul class="list-disc pl-6 space-y-2 text-base leading-relaxed">
+        <li>
+          <strong>Encuentro femenino:</strong> se realiza el 1° y 3° miércoles de
+          cada mes a las 15:30 hs.
+        </li>
+        <li>
+          <strong>Jóvenes:</strong> se reúnen cada 15 días. Consultá en <a
+            href="https://www.instagram.com/jvns_icep"
+            target="_blank"
+            class="text-sky-blue underline">@jvns_icep</a
+          > para saber la próxima fecha.
+        </li>
+        <li>
+          <strong>E.L.C.O.P.:</strong> significa <em
+            >Esperanza y Libertad en COnsumo Problemático</em
+          >. Es un espacio de contención para personas y familiares que estén
+          transitando situaciones de consumo. Sentite libre de venir solo o
+          acompañado.
+        </li>
+      </ul>
     </div>
   </div>
 </section>

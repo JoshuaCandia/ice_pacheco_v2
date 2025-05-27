@@ -21,7 +21,6 @@ export async function loadMinistriesFromCSV() {
     skip_empty_lines: true,
   });
 
-  // Mapear y asignar un ícono random
   const ministries = records.map((rec) => ({
     name: clean(rec.Nombre),
     description: clean(rec.Descripción),

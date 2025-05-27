@@ -1,0 +1,108 @@
+---
+import SectionTitle from "../../shared/components/SectionTitle.astro";
+
+const activities = [
+  {
+    day: "Domingo",
+    items: [
+      {
+        time: "10:00",
+        name: "Escuela Dominical",
+        description: "Para todas las edades",
+      },
+      {
+        time: "11:30",
+        name: "Culto Principal",
+        description: "Alabanza y predicación",
+      },
+    ],
+  },
+  {
+    day: "Martes",
+    items: [
+      {
+        time: "19:30",
+        name: "Reunión de Oración",
+        description: "Tiempo de intercesión",
+      },
+    ],
+  },
+  {
+    day: "Jueves",
+    items: [
+      {
+        time: "19:00",
+        name: "Estudio Bíblico",
+        description: "Profundizando en la Palabra",
+      },
+    ],
+  },
+  {
+    day: "Viernes",
+    items: [
+      {
+        time: "20:00",
+        name: "Reunión de Jóvenes",
+        description: "Adoración, comunión y enseñanza",
+      },
+    ],
+  },
+  {
+    day: "Sábado",
+    items: [
+      {
+        time: "16:00",
+        name: "Club de Niños",
+        description: "Actividades y enseñanza para niños",
+      },
+      {
+        time: "18:00",
+        name: "Ensayo del Coro",
+        description: "Preparación para el domingo",
+      },
+    ],
+  },
+];
+---
+
+<section id="horarios" class="py-20 bg-white-light">
+  <div class="container mx-auto px-4">
+    <SectionTitle
+      title="Horarios y Actividades"
+      subtitle="Te invitamos a ser parte de nuestras reuniones semanales."
+    />
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {
+        activities.map((daySchedule) => (
+          <div
+            class="relative bg-white rounded-2xl shadow-xl overflow-hidden
+                    hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 group
+                    flex flex-col"
+          >
+            <div class="bg-faith-blue text-white py-4 px-6 rounded-t-2xl">
+              <h3 class="text-2xl font-bold">{daySchedule.day}</h3>
+            </div>
+            <ul class="divide-y divide-gray-200 flex-grow">
+              {daySchedule.items.map((activity) => (
+                <li class="p-6 transition-colors duration-200 even:bg-gray-50">
+                  <div class="flex justify-between items-start mb-2">
+                    <span class="font-semibold text-faith-blue text-lg">
+                      {activity.name}
+                    </span>
+                    <span class="bg-sky-blue/10 text-sky-blue font-medium rounded-full px-3 py-1 text-sm flex-shrink-0 ml-4">
+                      {activity.time}
+                    </span>
+                  </div>
+                  <p class="text-gray-700 text-base leading-relaxed">
+                    {activity.description}
+                  </p>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>

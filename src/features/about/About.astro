@@ -1,0 +1,198 @@
+---
+import SectionTitle from "../../shared/components/SectionTitle.astro";
+---
+
+<section id="nosotros" class="py-20 bg-warm-beige">
+  <div class="container mx-auto px-4">
+    {/* Título de la Sección - Ajustado ligeramente para ser más directo */}
+    <SectionTitle
+      title="Nuestra Iglesia ICE Pacheco"
+      subtitle="Conoce nuestra historia, misión y los valores esenciales que nos guían como comunidad de fe."
+    />
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+      {/* Aumentado el gap para más espacio */}
+
+      <div>
+        <img
+          src="https://images.pexels.com/photos/6684784/pexels-photo-6684784.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+          alt="Interior de la iglesia con una luz brillante entrando a través de las vidrieras"
+          class="rounded-lg shadow-xl w-full h-auto object-cover max-h-[400px] md:max-h-[500px]"
+        />
+      </div>
+
+      {/* Sección del Contenido de Texto */}
+      <div>
+        {/* Bloque de Historia */}
+        <div class="mb-10">
+          {/* Mayor margen inferior */}
+          <h3
+            class="text-3xl font-serif font-bold text-faith-blue mb-4 pb-2 border-b border-light-gold/50"
+          >
+            {/* Texto más grande, subrayado sutil */}
+            Nuestra Historia
+          </h3>
+          <p class="text-gray-700 leading-relaxed">
+            {/* Mejor contraste y legibilidad con interlineado relajado */}
+            Fundada en 1995 por un pequeño grupo de creyentes comprometidos, nuestra
+            iglesia comenzó como una humilde reunión de oración en un hogar. Con
+            el tiempo, y guiados por la fe, crecimos hasta convertirnos en una comunidad
+            vibrante que sirve con amor a General Pacheco y sus alrededores. Desde
+            nuestros humildes inicios, hemos sido un faro de esperanza y un espacio
+            de crecimiento para innumerables vidas.
+          </p>
+        </div>
+
+        {/* Bloque de Misión */}
+        <div class="mb-10">
+          {/* Mayor margen inferior */}
+          <h3
+            class="text-3xl font-serif font-bold text-faith-blue mb-4 pb-2 border-b border-light-gold/50"
+          >
+            {/* Texto más grande, subrayado sutil */}
+            Nuestra Misión
+          </h3>
+          <p class="text-gray-700 leading-relaxed">
+            {/* Mejor contraste y legibilidad con interlineado relajado */}
+            Nuestra misión es compartir ardientemente el amor transformador de Cristo
+            a través del servicio incondicional, la adoración genuina y el discipulado
+            profundo. Aspiramos a formar una comunidad acogedora donde cada persona
+            pueda crecer en su fe, encontrar propósito y ser transformada por la
+            gracia ilimitada de Dios.
+          </p>
+        </div>
+
+        {/* Bloque de Valores */}
+        <div>
+          <h3
+            class="text-3xl font-serif font-bold text-faith-blue mb-5 pb-2 border-b border-light-gold/50"
+          >
+            {/* Texto más grande, subrayado sutil */}
+            Nuestros Valores Fundamentales
+          </h3>
+          <ul class="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-4">
+            {/* Ajuste de gaps para mejor distribución */}
+            <li class="flex gap-3 items-start">
+              {/* Mayor espacio entre icono y texto */}
+              <span class="text-light-gold mt-1 flex-shrink-0">
+                {/* flex-shrink-0 para que el icono no se comprima */}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  {/* Icono más grande */}
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                  ></path>
+                </svg>
+              </span>
+              <span class="text-gray-700">Fe y Adoración</span>
+              {/* Color de texto consistente */}
+            </li>
+            <li class="flex gap-3 items-start">
+              <span class="text-light-gold mt-1 flex-shrink-0">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                  ></path>
+                </svg>
+              </span>
+              <span class="text-gray-700">Comunidad y Fraternidad</span>
+            </li>
+            <li class="flex gap-3 items-start">
+              <span class="text-light-gold mt-1 flex-shrink-0">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                  ></path>
+                </svg>
+              </span>
+              <span class="text-gray-700">Servicio al Prójimo</span>
+            </li>
+            <li class="flex gap-3 items-start">
+              <span class="text-light-gold mt-1 flex-shrink-0">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                  ></path>
+                </svg>
+              </span>
+              <span class="text-gray-700">Crecimiento Espiritual</span>
+            </li>
+            <li class="flex gap-3 items-start">
+              <span class="text-light-gold mt-1 flex-shrink-0">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                  ></path>
+                </svg>
+              </span>
+              <span class="text-gray-700">Esperanza y Gracia</span>
+            </li>
+            <li class="flex gap-3 items-start">
+              <span class="text-light-gold mt-1 flex-shrink-0">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                  ></path>
+                </svg>
+              </span>
+              <span class="text-gray-700">Integridad y Verdad</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

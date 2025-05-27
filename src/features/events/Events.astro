@@ -1,0 +1,56 @@
+---
+import SectionTitle from '../../shared/components/SectionTitle.astro';
+
+const events = [
+  {
+    title: 'Campaña Evangelística',
+    date: '15-17 de Mayo',
+    description: 'Tres días de predicación especial con el Pastor invitado Juan García.',
+    image: 'https://images.pexels.com/photos/2774556/pexels-photo-2774556.jpeg?auto=compress&cs=tinysrgb&w=1200'
+  },
+  {
+    title: 'Retiro de Jóvenes',
+    date: '10-12 de Junio',
+    description: 'Fin de semana de comunión, aprendizaje y diversión para jóvenes entre 15 y 25 años.',
+    image: 'https://images.pexels.com/photos/1739842/pexels-photo-1739842.jpeg?auto=compress&cs=tinysrgb&w=1200'
+  },
+  {
+    title: 'Jornada de Servicio Comunitario',
+    date: '24 de Junio',
+    description: 'Día de trabajo voluntario en el barrio para ayudar a familias necesitadas.',
+    image: 'https://images.pexels.com/photos/6646918/pexels-photo-6646918.jpeg?auto=compress&cs=tinysrgb&w=1200'
+  }
+];
+---
+
+<section class="py-20 bg-faith-blue/5">
+  <div class="container mx-auto px-4">
+    <SectionTitle 
+      title="Próximos Eventos" 
+      subtitle="Mantente al tanto de nuestras actividades especiales y participá de ellas."
+    />
+    
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      {events.map(event => (
+        <div class="bg-white rounded-lg shadow-md overflow-hidden group hover:shadow-lg transition-shadow duration-300">
+          <div class="relative h-48 overflow-hidden">
+            <img 
+              src={event.image} 
+              alt={event.title} 
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            />
+          </div>
+          <div class="p-6">
+            <div class="flex justify-between items-start mb-2">
+              <h3 class="text-xl font-bold text-faith-blue">{event.title}</h3>
+              <span class="bg-light-gold/20 text-faith-blue text-sm rounded-full px-3 py-1">
+                {event.date}
+              </span>
+            </div>
+            <p class="text-soft-gray">{event.description}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

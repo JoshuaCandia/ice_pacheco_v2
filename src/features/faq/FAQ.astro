@@ -1,0 +1,59 @@
+---
+import SectionTitle from '../../shared/components/SectionTitle.astro';
+
+const faqs = [
+  {
+    question: '¿Cómo debo vestirme para asistir a la iglesia?',
+    answer: 'No tenemos un código de vestimenta específico. Te invitamos a venir como te sientas cómodo, con ropa apropiada y respetuosa para un entorno de adoración. Lo más importante es tu presencia y corazón.'
+  },
+  {
+    question: '¿Puedo traer a mis hijos?',
+    answer: '¡Absolutamente! Los niños son bienvenidos y tenemos programas especiales para ellos durante el servicio principal. Contamos con maestros capacitados que harán que la experiencia sea divertida y educativa.'
+  },
+  {
+    question: '¿Qué debo esperar en mi primera visita?',
+    answer: 'Serás recibido cálidamente por nuestro equipo de bienvenida que te orientará. El servicio incluye música de adoración, oración y un mensaje basado en la Biblia. La duración aproximada es de 90 minutos.'
+  },
+  {
+    question: '¿Necesito traer una Biblia?',
+    answer: 'Aunque no es obligatorio, te animamos a traer tu Biblia si tienes una. También proyectamos los versículos durante el servicio y tenemos Biblias disponibles para préstamo.'
+  },
+  {
+    question: '¿Cómo puedo involucrarme en la iglesia?',
+    answer: 'Existen muchas maneras de participar: unirte a un grupo pequeño, servir en alguno de nuestros ministerios, o participar en eventos especiales. Te recomendamos hablar con alguno de nuestros líderes después del servicio para encontrar el área que mejor se adapte a tus dones.'
+  },
+  {
+    question: '¿Ofrecen clases de estudio bíblico o discipulado?',
+    answer: 'Sí, tenemos estudios bíblicos semanales y programas de discipulado para diferentes niveles. También ofrecemos cursos especiales a lo largo del año para profundizar en temas específicos.'
+  }
+];
+---
+
+<section id="preguntas" class="py-20 bg-white-light">
+  <div class="container mx-auto px-4">
+    <SectionTitle 
+      title="Preguntas Frecuentes" 
+      subtitle="Respuestas a las consultas más comunes sobre nuestra iglesia."
+    />
+    
+    <div class="max-w-3xl mx-auto">
+      {faqs.map((faq, index) => (
+        <div class="mb-4 bg-white rounded-lg shadow-sm border border-gray-100 overflow-hidden">
+          <button 
+            class="faq-question w-full px-6 py-4 text-left flex justify-between items-center focus:outline-none"
+            aria-expanded="false"
+            aria-controls={`faq-answer-${index}`}
+          >
+            <span class="font-medium text-faith-blue">{faq.question}</span>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-sky-blue transition-transform duration-200">
+              <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+            </svg>
+          </button>
+          <div id={`faq-answer-${index}`} class="hidden px-6 py-4 bg-warm-beige/30 border-t border-gray-100">
+            <p class="text-soft-gray">{faq.answer}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

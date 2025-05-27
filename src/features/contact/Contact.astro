@@ -1,98 +1,114 @@
 ---
-import Button from '../../shared/components/Button.astro';
-import SectionTitle from '../../shared/components/SectionTitle.astro';
+import Button from "../../shared/components/Button.astro";
+import SectionTitle from "../../shared/components/SectionTitle.astro";
 ---
 
 <section id="contacto" class="py-20 bg-warm-beige">
   <div class="container mx-auto px-4">
-    <SectionTitle 
-      title="Ubicación y Contacto" 
+    <SectionTitle
+      title="Ubicación y Contacto"
       subtitle="Estamos aquí para responder tus preguntas. ¡Contáctanos!"
     />
-    
+
     <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
       <div>
         <div class="bg-white p-6 rounded-lg shadow-md mb-6">
-          <h3 class="text-xl font-bold text-faith-blue mb-4">Nuestra Dirección</h3>
-          <p class="text-soft-gray mb-2">Av. Hipólito Yrigoyen 2345</p>
+          <h3 class="text-xl font-bold text-faith-blue mb-4">
+            Nuestra Dirección
+          </h3>
+          <p class="text-soft-gray mb-2">Aguado 25</p>
           <p class="text-soft-gray mb-4">General Pacheco, Buenos Aires</p>
-          
-          <h4 class="font-semibold text-faith-blue mb-2">Transportes cercanos:</h4>
+
+          <h4 class="font-semibold text-faith-blue mb-2">
+            Transportes cercanos:
+          </h4>
           <ul class="text-soft-gray mb-6 space-y-1">
-            <li>Colectivos: 291, 630, 720</li>
+            <li>Colectivos: 720,721,203,60</li>
             <li>A 5 cuadras de la estación General Pacheco (Línea Mitre)</li>
           </ul>
-          
-          <a href="https://wa.me/5491155551234" class="inline-flex items-center gap-2 bg-[#25D366] text-white py-2 px-4 rounded-lg hover:bg-[#128C7E] transition-colors">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5">
-              <path d="M12.001 2C6.47813 2 2.00098 6.47715 2.00098 12C2.00098 13.5733 2.35859 15.0751 3.00469 16.4102L2.05176 19.8066C1.95313 20.1729 2.07969 20.5586 2.35859 20.8379C2.63749 21.1172 3.02227 21.2442 3.38967 21.1451L6.79774 20.1953C8.13379 20.8429 9.63672 21.2 11.209 21.2C16.7319 21.2 21.209 16.7229 21.209 11.2C21.209 5.67715 16.7319 2 12.001 2ZM16.6015 15.1221C16.4214 15.6406 15.504 16.0977 15.084 16.1289C14.7051 16.1562 14.2578 16.3008 12.1054 15.4219C10.2129 14.6641 9.00977 12.8047 8.92188 12.7168C8.83399 12.6289 8.00684 11.5859 8.00684 10.5039C8.00684 9.42188 8.57227 8.89062 8.78321 8.66016C8.99415 8.42969 9.2461 8.3711 9.40235 8.3711C9.55859 8.3711 9.7148 8.3711 9.85157 8.37695C9.99415 8.38281 10.1778 8.31055 10.3574 8.72266C10.5448 9.15039 10.9726 10.2324 11.0214 10.3242C11.0703 10.416 11.0947 10.5234 11.0254 10.6465C10.956 10.7695 10.9312 10.8477 10.8388 10.957C10.7461 11.0664 10.6416 11.1992 10.5585 11.2822C10.4658 11.3749 10.3731 11.4774 10.4819 11.6641C10.5907 11.8508 11.0186 12.5703 11.6582 13.1367C12.4809 13.8672 13.1621 14.1016 13.3488 14.1953C13.5355 14.2891 13.6416 14.2774 13.7461 14.1641C13.8506 14.0508 14.2539 13.5762 14.3711 13.3896C14.4882 13.2031 14.6051 13.2266 14.7636 13.291C14.922 13.3555 15.9995 13.8867 16.1748 13.9805C16.3501 14.0742 16.4678 14.1211 16.5166 14.1953C16.5654 14.2695 16.5654 14.7109 16.375 15.1211L16.6015 15.1221Z"/>
+
+          <a
+            href="https://wa.me/5491155551234"
+            class="inline-flex items-center gap-2 bg-[#25D366] text-white py-2 px-4 rounded-lg hover:bg-[#128C7E] transition-colors"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="w-5 h-5"
+            >
+              <path
+                d="M12.001 2C6.47813 2 2.00098 6.47715 2.00098 12C2.00098 13.5733 2.35859 15.0751 3.00469 16.4102L2.05176 19.8066C1.95313 20.1729 2.07969 20.5586 2.35859 20.8379C2.63749 21.1172 3.02227 21.2442 3.38967 21.1451L6.79774 20.1953C8.13379 20.8429 9.63672 21.2 11.209 21.2C16.7319 21.2 21.209 16.7229 21.209 11.2C21.209 5.67715 16.7319 2 12.001 2ZM16.6015 15.1221C16.4214 15.6406 15.504 16.0977 15.084 16.1289C14.7051 16.1562 14.2578 16.3008 12.1054 15.4219C10.2129 14.6641 9.00977 12.8047 8.92188 12.7168C8.83399 12.6289 8.00684 11.5859 8.00684 10.5039C8.00684 9.42188 8.57227 8.89062 8.78321 8.66016C8.99415 8.42969 9.2461 8.3711 9.40235 8.3711C9.55859 8.3711 9.7148 8.3711 9.85157 8.37695C9.99415 8.38281 10.1778 8.31055 10.3574 8.72266C10.5448 9.15039 10.9726 10.2324 11.0214 10.3242C11.0703 10.416 11.0947 10.5234 11.0254 10.6465C10.956 10.7695 10.9312 10.8477 10.8388 10.957C10.7461 11.0664 10.6416 11.1992 10.5585 11.2822C10.4658 11.3749 10.3731 11.4774 10.4819 11.6641C10.5907 11.8508 11.0186 12.5703 11.6582 13.1367C12.4809 13.8672 13.1621 14.1016 13.3488 14.1953C13.5355 14.2891 13.6416 14.2774 13.7461 14.1641C13.8506 14.0508 14.2539 13.5762 14.3711 13.3896C14.4882 13.2031 14.6051 13.2266 14.7636 13.291C14.922 13.3555 15.9995 13.8867 16.1748 13.9805C16.3501 14.0742 16.4678 14.1211 16.5166 14.1953C16.5654 14.2695 16.5654 14.7109 16.375 15.1211L16.6015 15.1221Z"
+              ></path>
             </svg>
             Contactar por WhatsApp
           </a>
         </div>
-        
+
         <div class="rounded-lg overflow-hidden shadow-md h-[300px]">
-          <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26301.89349577972!2d-58.67486112910154!3d-34.44751429999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bca5a8aea6dadf%3A0x89e830fa27a1b232!2sGeneral%20Pacheco%2C%20Buenos%20Aires%20Province!5e0!3m2!1sen!2sar!4v1650000000000!5m2!1sen!2sar" 
-            width="100%" 
-            height="100%" 
-            style="border:0;" 
-            allowfullscreen="" 
-            loading="lazy" 
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d390.32093479640815!2d-58.635988!3d-34.4618331!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bca49a9223c5db%3A0xb706b41dbdc2bc07!2sIglesia%20Cristiana%20Evang%C3%A9lica%20General%20Pacheco!5e1!3m2!1ses-419!2sar!4v1748369895053!5m2!1ses-419!2sar"
+            width="600"
+            height="450"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
-      
+
       <div class="bg-white p-6 rounded-lg shadow-md">
-        <h3 class="text-xl font-bold text-faith-blue mb-4">Envíanos un Mensaje</h3>
+        <h3 class="text-xl font-bold text-faith-blue mb-4">
+          Envíanos un Mensaje
+        </h3>
         <form class="space-y-4">
           <div>
             <label for="name" class="block text-faith-blue mb-1">Nombre</label>
-            <input 
-              type="text" 
-              id="name" 
+            <input
+              type="text"
+              id="name"
               class="w-full px-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-blue"
               placeholder="Tu nombre"
             />
           </div>
-          
+
           <div>
-            <label for="email" class="block text-faith-blue mb-1">Correo Electrónico</label>
-            <input 
-              type="email" 
-              id="email" 
+            <label for="email" class="block text-faith-blue mb-1"
+              >Correo Electrónico</label
+            >
+            <input
+              type="email"
+              id="email"
               class="w-full px-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-blue"
               placeholder="tucorreo@ejemplo.com"
             />
           </div>
-          
+
           <div>
-            <label for="phone" class="block text-faith-blue mb-1">Teléfono (opcional)</label>
-            <input 
-              type="tel" 
-              id="phone" 
+            <label for="phone" class="block text-faith-blue mb-1"
+              >Teléfono (opcional)</label
+            >
+            <input
+              type="tel"
+              id="phone"
               class="w-full px-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-blue"
               placeholder="Tu número de teléfono"
             />
           </div>
-          
+
           <div>
-            <label for="message" class="block text-faith-blue mb-1">Mensaje</label>
-            <textarea 
-              id="message" 
-              rows="4" 
+            <label for="message" class="block text-faith-blue mb-1"
+              >Mensaje</label
+            >
+            <textarea
+              id="message"
+              rows="4"
               class="w-full px-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-blue"
-              placeholder="Escribe tu mensaje aquí..."
-            ></textarea>
+              placeholder="Escribe tu mensaje aquí..."></textarea>
           </div>
-          
+
           <div>
-            <Button 
-              text="Enviar Mensaje" 
-              variant="primary"
-              class="w-full"
-            />
+            <Button text="Enviar Mensaje" variant="primary" class="w-full" />
           </div>
         </form>
       </div>

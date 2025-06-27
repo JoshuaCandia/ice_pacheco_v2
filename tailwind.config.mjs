@@ -10,6 +10,10 @@ export default {
         muted: "#7a7a7a", // Gris humo - texto secundario
         light: "#e9f3fb", // Azul cielo muy claro - fondos alternativos suaves
         dark: "#1f2e5c", // Azul oscuro para contrastes o pie de página
+        // Nuevos colores para mejor legibilidad
+        "text-primary": "#2E2E2E", // Gris muy oscuro para títulos principales
+        "text-secondary": "#3A3A3A", // Gris oscuro para texto secundario
+        "text-muted": "#444444", // Gris medio para descripciones
         // Mantenemos algunos colores legacy para compatibilidad
         "white-light": "#fdfdfd",
         "sky-blue": "#C5896F",

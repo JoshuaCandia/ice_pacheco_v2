@@ -3,7 +3,7 @@ import Button from "../../shared/components/Button.astro";
 import SectionTitle from "../../shared/components/SectionTitle.astro";
 ---
 
-<section id="contacto" class="py-20 bg-warm-beige">
+<section id="contacto" class="py-20 bg-secondary">
   <div class="container mx-auto px-4">
     <SectionTitle
       title="Ubicación y Contacto"
@@ -13,16 +13,16 @@ import SectionTitle from "../../shared/components/SectionTitle.astro";
     <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
       <div>
         <div class="bg-white p-6 rounded-lg shadow-md mb-6">
-          <h3 class="text-xl font-bold text-faith-blue mb-4">
+          <h3 class="text-xl font-bold text-primary mb-4">
             Nuestra Dirección
           </h3>
-          <p class="text-soft-gray mb-2">Aguado 25</p>
-          <p class="text-soft-gray mb-4">General Pacheco, Buenos Aires</p>
+          <p class="text-muted mb-2">Aguado 25</p>
+          <p class="text-muted mb-4">General Pacheco, Buenos Aires</p>
 
-          <h4 class="font-semibold text-faith-blue mb-2">
+          <h4 class="font-semibold text-primary mb-2">
             Transportes cercanos:
           </h4>
-          <ul class="text-soft-gray mb-6 space-y-1">
+          <ul class="text-muted mb-6 space-y-1">
             <li>Colectivos: 720,721,203,60</li>
             <li>A 5 cuadras de la estación General Pacheco (Línea Mitre)</li>
           </ul>
@@ -58,52 +58,52 @@ import SectionTitle from "../../shared/components/SectionTitle.astro";
       </div>
 
       <div class="bg-white p-6 rounded-lg shadow-md">
-        <h3 class="text-xl font-bold text-faith-blue mb-4">
+        <h3 class="text-xl font-bold text-primary mb-4">
           Envíanos un Mensaje
         </h3>
         <form class="space-y-4">
           <div>
-            <label for="name" class="block text-faith-blue mb-1">Nombre</label>
+            <label for="name" class="block text-primary mb-1">Nombre</label>
             <input
               type="text"
               id="name"
-              class="w-full px-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-blue"
+              class="w-full px-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent"
               placeholder="Tu nombre"
             />
           </div>
 
           <div>
-            <label for="email" class="block text-faith-blue mb-1"
+            <label for="email" class="block text-primary mb-1"
               >Correo Electrónico</label
             >
             <input
               type="email"
               id="email"
-              class="w-full px-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-blue"
+              class="w-full px-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent"
               placeholder="tucorreo@ejemplo.com"
             />
           </div>
 
           <div>
-            <label for="phone" class="block text-faith-blue mb-1"
+            <label for="phone" class="block text-primary mb-1"
               >Teléfono (opcional)</label
             >
             <input
               type="tel"
               id="phone"
-              class="w-full px-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-blue"
+              class="w-full px-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent"
               placeholder="Tu número de teléfono"
             />
           </div>
 
           <div>
-            <label for="message" class="block text-faith-blue mb-1"
+            <label for="message" class="block text-primary mb-1"
               >Mensaje</label
             >
             <textarea
               id="message"
               rows="4"
-              class="w-full px-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-blue"
+              class="w-full px-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent"
               placeholder="Escribe tu mensaje aquí..."></textarea>
           </div>
 

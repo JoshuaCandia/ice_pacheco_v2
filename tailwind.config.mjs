@@ -4,11 +4,18 @@ export default {
   theme: {
     extend: {
       colors: {
+        primary: "#494544", // Azul noche - encabezados, texto fuerte
+        secondary: "#CCBBA9", // Blanco nieve - fondo principal
+        accent: "#C5896F", // Azul cielo - botones, íconos llamativos
+        muted: "#7a7a7a", // Gris humo - texto secundario
+        light: "#e9f3fb", // Azul cielo muy claro - fondos alternativos suaves
+        dark: "#1f2e5c", // Azul oscuro para contrastes o pie de página
+        // Mantenemos algunos colores legacy para compatibilidad
         "white-light": "#fdfdfd",
-        "sky-blue": "#6ba8e5",
-        "faith-blue": "#345c9c",
-        "warm-beige": "#f8f1e9",
-        "light-gold": "#e4c07a",
+        "sky-blue": "#C5896F",
+        "faith-blue": "#494544",
+        "warm-beige": "#CCBBA9",
+        "light-gold": "#C5896F",
         "soft-gray": "#7a7a7a",
         "hope-green": "#95c38a",
       },

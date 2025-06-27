@@ -36,30 +36,30 @@ const {
         <nav class="flex justify-between items-center">
           <a
             href="#"
-            class="font-serif text-white font-bold text-xl relative after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-light-gold after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 transition-colors duration-300"
+            class="font-serif text-white font-bold text-xl relative after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-accent after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 transition-colors duration-300"
           >
             ICE Pacheco
           </a>
           <div class="hidden md:flex gap-6 items-center">
             <a
               href="#nosotros"
-              class="text-white hover:text-sky-blue transition-all duration-300 relative after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-sky-blue after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300"
+              class="text-white hover:text-accent transition-all duration-300 relative after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-accent after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300"
               >Nosotros</a
             >
             <a
               href="#horarios"
-              class="text-white hover:text-sky-blue transition-all duration-300 relative after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-sky-blue after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300"
+              class="text-white hover:text-accent transition-all duration-300 relative after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-accent after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300"
               >Horarios</a
             >
             <a
               href="#ministerios"
-              class="text-white hover:text-sky-blue transition-all duration-300 relative after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-sky-blue after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300"
+              class="text-white hover:text-accent transition-all duration-300 relative after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-accent after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300"
               >Ministerios</a
             >
 
             <a
               href="#contacto"
-              class="px-4 py-2 bg-sky-blue text-white rounded-lg shadow-lg hover:shadow-sky-blue/20 transition-all duration-300 hover:-translate-y-0.5"
+              class="px-4 py-2 bg-accent text-white rounded-lg shadow-lg hover:shadow-accent/20 transition-all duration-300 hover:-translate-y-0.5"
               >Contacto</a
             >
           </div>
@@ -92,27 +92,27 @@ const {
         <div class="container mx-auto px-4 py-2 flex flex-col">
           <a
             href="#nosotros"
-            class="py-3 px-4 text-faith-blue hover:bg-faith-blue/5 rounded-lg transition-colors"
+            class="py-3 px-4 text-primary hover:bg-primary/5 rounded-lg transition-colors"
             >Nosotros</a
           >
           <a
             href="#horarios"
-            class="py-3 px-4 text-faith-blue hover:bg-faith-blue/5 rounded-lg transition-colors"
+            class="py-3 px-4 text-primary hover:bg-primary/5 rounded-lg transition-colors"
             >Horarios</a
           >
           <a
             href="#ministerios"
-            class="py-3 px-4 text-faith-blue hover:bg-faith-blue/5 rounded-lg transition-colors"
+            class="py-3 px-4 text-primary hover:bg-primary/5 rounded-lg transition-colors"
             >Ministerios</a
           >
           <a
             href="#preguntas"
-            class="py-3 px-4 text-faith-blue hover:bg-faith-blue/5 rounded-lg transition-colors"
+            class="py-3 px-4 text-primary hover:bg-primary/5 rounded-lg transition-colors"
             >Preguntas</a
           >
           <a
             href="#contacto"
-            class="py-3 px-4 text-faith-blue hover:bg-faith-blue/5 rounded-lg transition-colors"
+            class="py-3 px-4 text-primary hover:bg-primary/5 rounded-lg transition-colors"
             >Contacto</a
           >
         </div>
@@ -123,7 +123,7 @@ const {
       <slot />
     </main>
 
-    <footer class="bg-faith-blue text-white py-12">
+    <footer class="bg-dark text-white py-12">
       <div class="container mx-auto px-4">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
           <div data-aos="fade-up" data-aos-delay="100">
@@ -200,14 +200,14 @@ const {
         if (window.scrollY > 50) {
           siteHeader.classList.add(
             "bg-white-light",
-            "text-faith-blue",
+            "text-primary",
             "shadow-md"
           );
           siteHeader.classList.remove("text-white");
         } else {
           siteHeader.classList.remove(
             "bg-white-light",
-            "text-faith-blue",
+            "text-primary",
             "shadow-md"
           );
           siteHeader.classList.add("text-white");
@@ -248,7 +248,7 @@ const {
           "border-b",
           "border-gray-200/20",
           "shadow-md",
-          "text-faith-blue", // Por defecto para todos los elementos hijos
+          "text-primary", // Por defecto para todos los elementos hijos
         ];
 
         // Clases del header cuando está en la parte superior (scroll = 0)
@@ -268,30 +268,30 @@ const {
 
             // Cambiar color del logo y enlaces
             logo.classList.remove("text-white");
-            logo.classList.add("text-faith-blue");
+            logo.classList.add("text-primary");
 
             navLinks.forEach((link) => {
               link.classList.remove("text-white");
-              link.classList.add("text-faith-blue");
+              link.classList.add("text-primary");
             });
 
             mobileMenuButton.classList.remove("text-white");
-            mobileMenuButton.classList.add("text-faith-blue");
+            mobileMenuButton.classList.add("text-primary");
           } else {
             // No se ha hecho scroll: añadir clases del estado "initial"
             siteHeader.classList.remove(...scrolledHeaderClasses);
             siteHeader.classList.add(...initialHeaderClasses);
 
             // Cambiar color del logo y enlaces a blanco
-            logo.classList.remove("text-faith-blue");
+            logo.classList.remove("text-primary");
             logo.classList.add("text-white");
 
             navLinks.forEach((link) => {
-              link.classList.remove("text-faith-blue");
+              link.classList.remove("text-primary");
               link.classList.add("text-white");
             });
 
-            mobileMenuButton.classList.remove("text-faith-blue");
+            mobileMenuButton.classList.remove("text-primary");
             mobileMenuButton.classList.add("text-white");
           }
         }

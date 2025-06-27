@@ -1,5 +1,6 @@
 ---
 import Button from "../../shared/components/Button.astro";
+import iceFrente from "../../assets/ice_frente.jpg";
 ---
 
 <section
@@ -8,9 +9,9 @@ import Button from "../../shared/components/Button.astro";
   <!-- Background Image with Overlay -->
   <div
     class="absolute inset-0 bg-cover bg-center bg-no-repeat"
-    style="background-image: url(https://images.pexels.com/photos/7871022/pexels-photo-7871022.jpeg?auto=compress&cs=tinysrgb&w=1600)"
+    style={`background-image: url(${iceFrente.src})`}
   >
-    <div class="absolute inset-0 bg-black/60"></div>
+    <div class="absolute inset-0 bg-black/70"></div>
   </div>
 
   <!-- Content -->
@@ -28,7 +29,7 @@ import Button from "../../shared/components/Button.astro";
           href="#nosotros"
           variant="primary"
           size="lg"
-          class="bg-sky-blue hover:bg-faith-blue"
+          class="bg-accent hover:bg-accent/90"
         />
         <Button
           text="Horarios"
